@@ -47,7 +47,7 @@ API sadece 3 parametre almaktadır.
 
 ## İstek Örnekleri
 
-✅*Oğlak burcunun günlük yorumu:*
+✅**Oğlak burcunun günlük yorumu:**
 
 `https://toktasoft.com/api/burclar.php?burc=oglak&api_key=myapikey`
 
@@ -68,7 +68,7 @@ API sadece 3 parametre almaktadır.
 }
 ```
 
-✅*Oğlak burcunun haftalık yorumu:*
+✅**Oğlak burcunun haftalık yorumu:**
 
 `https://toktasoft.com/api/burclar.php?burc=oglak&tip=haftalik&api_key=myapikey`
 
@@ -89,7 +89,7 @@ API sadece 3 parametre almaktadır.
 }
 ```
 
-✅*Oğlak burcunun genel özellikleri:*
+✅**Oğlak burcunun genel özellikleri:**
 
 `https://toktasoft.com/api/burclar.php?burc=oglak&tip=genel&api_key=myapikey`
 
@@ -127,7 +127,7 @@ API sadece 3 parametre almaktadır.
 }
 ```
 
-❌*Yanlış istek:*
+❌**Yanlış istek:**
 
 `https://toktasoft.com/api/burclar.php?burc=zurafa&tip=aylik&api_key=myapikey`
 
@@ -139,7 +139,7 @@ API sadece 3 parametre almaktadır.
 }
 ```
 
-❌*Yanlış istek:*
+❌**Yanlış istek:**
 
 `https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_key=myapikey`
 
