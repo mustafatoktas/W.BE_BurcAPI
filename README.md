@@ -25,7 +25,7 @@ günlük, haftalık, aylık, yıllık yorumlarını JSON formatında sağlar.
 
 JSON dosyasında her burç için burcu temsil eden 256 x 256 çözünürlüğünde png uzantılı resim barındıran url adresi de bulunmaktadır.
 
-Ayrıca tip parametresine "genel"değeri yazılarak burçların detaylı karakter özellikleri öğrenilebilir.
+Ayrıca tip parametresine "genel" değeri yazılarak burçların detaylı karakter özellikleri öğrenilebilir.
 
 ![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
