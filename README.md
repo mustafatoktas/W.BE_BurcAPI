@@ -34,7 +34,7 @@ Ayrıca tip parametresine "genel"değeri yazılarak burçların detaylı karakte
 
 Base URL: `https://toktasoft.com/api/burclar.php`
 
-API sadece 3 parametre alır.
+API sadece 3 parametre almaktadır.
 
 | Parametre | Zorunlu Mu? | Değerler | Varsayılan Değer | Açıklama |
 |      -------     |      -------     |      -------     |      -------     |      -------     |
@@ -47,7 +47,9 @@ API sadece 3 parametre alır.
 
 ## İstek Örnekleri
 
-✅Oğlak burcunun günlük yorumu: `https://toktasoft.com/api/burclar.php?burc=oglak&api_key=myapikey`
+✅Oğlak burcunun günlük yorumu:
+
+`https://toktasoft.com/api/burclar.php?burc=oglak&api_key=myapikey`
 
 ```json
 {
@@ -66,7 +68,9 @@ API sadece 3 parametre alır.
 }
 ```
 
-✅Oğlak burcunun haftalık yorumu: `https://toktasoft.com/api/burclar.php?burc=oglak&tip=haftalik&api_key=myapikey`
+✅Oğlak burcunun haftalık yorumu:
+
+`https://toktasoft.com/api/burclar.php?burc=oglak&tip=haftalik&api_key=myapikey`
 
 ```json
 {
@@ -85,7 +89,9 @@ API sadece 3 parametre alır.
 }
 ```
 
-✅Oğlak burcunun genel özellikleri: `https://toktasoft.com/api/burclar.php?burc=oglak&tip=genel&api_key=myapikey`
+✅Oğlak burcunun genel özellikleri:
+
+`https://toktasoft.com/api/burclar.php?burc=oglak&tip=genel&api_key=myapikey`
 
 ```json
 {
@@ -121,7 +127,9 @@ API sadece 3 parametre alır.
 }
 ```
 
-❌Yanlış İstek: `https://toktasoft.com/api/burclar.php?burc=zurafa&tip=aylik&api_key=myapikey`
+❌Yanlış İstek:
+
+`https://toktasoft.com/api/burclar.php?burc=zurafa&tip=aylik&api_key=myapikey`
 
 ```json
 {
@@ -131,7 +139,9 @@ API sadece 3 parametre alır.
 }
 ```
 
-❌Yanlış İstek: `https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_key=myapikey`
+❌Yanlış İstek:
+
+`https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_key=myapikey`
 
 ```json
 {
