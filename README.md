@@ -127,7 +127,7 @@ API sadece 3 parametre almaktadır.
 }
 ```
 
-❌Yanlış İstek:
+❌Yanlış istek:
 
 `https://toktasoft.com/api/burclar.php?burc=zurafa&tip=aylik&api_key=myapikey`
 
@@ -139,7 +139,7 @@ API sadece 3 parametre almaktadır.
 }
 ```
 
-❌Yanlış İstek:
+❌Yanlış istek:
 
 `https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_key=myapikey`
 
