@@ -12,8 +12,8 @@
 - [Lisans](#lisans)
 - [İletişim](#i̇letişim)
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
+![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
 ## API Hakkında
 
@@ -27,8 +27,8 @@ JSON dosyasında her burç için burcu temsil eden 256 x 256 çözünürlüğün
 
 Ayrıca tip parametresine "genel" değeri yazılarak burçların detaylı karakter özellikleri öğrenilebilir.
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
+![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
 ## Dokümantasyon
 
@@ -42,8 +42,8 @@ API sadece 3 parametre almaktadır.
 | <p align="center">`tip`</p>     | <p align="center">hayır</p> | `gunluk`<br>`haftalik`<br>`aylik`<br>`yillik`<br>`genel` | <p align="center">gunluk</p>                                        | Yorumu istenilen burcun tip değeri. Burcun genel özellikleri için genel değeri yazılmalıdır. |                                  | 
 | <p align="center">`api_key`</p> | <p align="center">evet</p>  | API anahtarı                                                                                                                   |                                                                                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
+![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
 ## İstek Örnekleri
 
@@ -167,8 +167,8 @@ curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_ke
 }
 ```
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
+![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
 ## Lisans
     Copyright 2024 Mustafa TOKTAŞ
@@ -185,8 +185,8 @@ curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_ke
     See the License for the specific language governing permissions and
     limitations under the License.
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
+![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
 ## İletişim
 
