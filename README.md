@@ -22,7 +22,7 @@
 
 ## API Hakkında
 
-Bu repo, Php diliyle geliştirmiş olan burç yorumlarını ve bilgilerini sunan
+Bu repo, Php diliyle geliştirilmiş olan burç yorumlarını ve bilgilerini sunan
 API'nin dokümantasyonunu içerir.
 
 HTTP GET istekleriyle `burc`, `tip` ve `api_key` parametrelerini alır ve bütün burçların
