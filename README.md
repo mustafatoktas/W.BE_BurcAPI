@@ -15,9 +15,14 @@
 
 ![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
 
+<a href="https://github.com/mustafatoktas/W.BE_RepoVisitorCounterAPI" target="_blank"> <img src="https://toktasoft.com/api/github/repo-visitor-counter.php?repo=ghb8jc6vnp4tmx7&show_repo_name=1&show_date=1&show_brand=0" alt="Repo Visitor Counter"/> </a>
+
+
+![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+
 ## API Hakkında
 
-Bu repo, Php diliyle geliştirmiş olduğum burç yorumlarını ve bilgilerini sunan
+Bu repo, Php diliyle geliştirmiş olan burç yorumlarını ve bilgilerini sunan
 API'nin dokümantasyonunu içerir.
 
 HTTP GET istekleriyle `burc`, `tip` ve `api_key` parametrelerini alır ve bütün burçların
@@ -34,10 +39,10 @@ Ayrıca tip parametresine "genel" değeri yazılarak burçların detaylı karakt
 
 Base URL: `https://toktasoft.com/api/burclar.php`
 
-API sadece 3 parametre almaktadır.
+API 3 farklı parametre almaktadır.
 
 | Parametre                       | Zorunlu Mu?                 | Değerler                                                                                                                       | Varsayılan Değer             | Açıklama                         |
-| ------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- |--------------------------------- |
+| ------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- | -------------------------------- |
 | <p align="center">`burc`</p>    | <p align="center">evet</p>  | `oglak`<br>`boga`<br>`ikizler`<br>`yengec`<br>`aslan`<br>`basak`<br>`terazi`<br>`akrep`<br>`yay`<br>`koc`<br>`kova`<br>`balik` |                              | Bilgileri istenen burcun değeri. |   
 | <p align="center">`tip`</p>     | <p align="center">hayır</p> | `gunluk`<br>`haftalik`<br>`aylik`<br>`yillik`<br>`genel`                                                                       | <p align="center">gunluk</p> | Yorumu istenilen burcun tip değeri. Burcun genel özellikleri için genel değeri yazılmalıdır.                                                                                                                    |
 | <p align="center">`api_key`</p> | <p align="center">evet</p>  | API anahtarı                                                                                                                   |                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
@@ -47,7 +52,7 @@ API sadece 3 parametre almaktadır.
 
 ## İstek Örnekleri
 
-İstek örnekleri curl komut satırı aracı kullanılarak gösterilmiştir.
+İstek örnekleri `curl` komut satırı aracı kullanılarak gösterilmiştir.
 
 ✅**Oğlak burcunun günlük yorumu**
 
