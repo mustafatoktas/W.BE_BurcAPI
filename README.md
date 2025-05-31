@@ -1,4 +1,6 @@
-<h1 align="center">Burç API</h1>
+<h1 align="center">
+Burç API<a name="readme-top"></a>
+</h1>
 
 <div align="center">
   <img src="./Readme Resources/Burç API Logo.png" alt="Logo" width="120"/>
@@ -13,7 +15,7 @@
 - [İletişim](#i̇letişim)
 
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+![-----------------------------------------------------](./Readme%20Resources/Line.png)
 
 ## API Hakkında
 
@@ -28,11 +30,11 @@ JSON dosyasında her burç için burcu temsil eden 256 x 256 çözünürlüğün
 Ayrıca tip parametresine "genel" değeri yazılarak burçların detaylı karakter özellikleri öğrenilebilir.
 
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+![-----------------------------------------------------](./Readme%20Resources/Line.png)
 
 ## Dokümantasyon
 
-Base URL: `https://toktasoft.com/api/burclar.php`
+Base URL: `https://toktasoft.com/api/burclar`
 
 API 3 farklı parametre almaktadır.
 
@@ -43,7 +45,7 @@ API 3 farklı parametre almaktadır.
 | <p align="center">`api_key`</p> | <p align="center">evet</p>  | API anahtarı                                                                                                                   |                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
 
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+![-----------------------------------------------------](./Readme%20Resources/Line.png)
 
 ## İstek Örnekleri
 
@@ -52,58 +54,61 @@ API 3 farklı parametre almaktadır.
 ✅**Oğlak burcunun günlük yorumu**
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&api_key=myapikey"
 ```
 
 ```json
 {
-  "success": true,
+  "status": 200,
+  "monthly_request_count": 34,
   "result": {
     "burc": "oglak",
     "tip": "gunluk",
-    "tarih": "2024-07-02",
-    "hafta_numarasi": "27",
-    "ay_numarasi": "7",
-    "yil": "2024",
-    "yorum": "Merhaba! Bugün Oğlak burcu için ...",
-    "resim_url": "https://toktasoft.com/..."
+    "tarih": "2025-05-31",
+    "hafta_numarasi": "22",
+    "ay_numarasi": "5",
+    "yil": "2025",
+    "yorum": "Son zamanlarda içsel huzur...",
+    "resim_url": "https://toktasoft.com/api/api-resources/burclar/oglak.png"
   },
-  "monthly_request_count": 34
+  "error": null
 }
 ```
 
 ✅**Oğlak burcunun haftalık yorumu**
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=haftalik&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=haftalik&api_key=myapikey"
 ```
 
 ```json
 {
-  "success": true,
+  "status": 200,
+  "monthly_request_count": 67,
   "result": {
     "burc": "oglak",
     "tip": "haftalik",
-    "tarih": "2024-08-05",
-    "hafta_numarasi": "32",
-    "ay_numarasi": "8",
-    "yil": "2024",
-    "yorum": "Bu hafta, iş ve kariyer alanında ...",
-    "resim_url": "https://toktasoft.com/..."
+    "tarih": "2025-05-31",
+    "hafta_numarasi": "22",
+    "ay_numarasi": "5",
+    "yil": "2025",
+    "yorum": "Bu hafta, iş ve kariyer alanında...",
+    "resim_url": "https://toktasoft.com/api/api-resources/burclar/oglak.png"
   },
-  "monthly_request_count": 67
+  "error": null
 }
 ```
 
 ✅**Oğlak burcunun genel özellikleri**
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=genel&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=genel&api_key=myapikey"
 ```
 
 ```json
 {
-  "success": true,
+  "status": 200,
+  "monthly_request_count": 81,
   "result": {
     "yonetici_gezegeni_yildizi": "Satürn",
     "gruplar": [
@@ -118,20 +123,20 @@ curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=genel&api_key=
       "Diş",
       "Kemikler"
     ],
-    "genel": "Toprak grubunun üyelerinden olan Oğlak burcu ...",
-    "is_hayati": "Aslında iş hayatının burçlardaki karşılığı Oğlak burcudur ...",
-    "saglik": "Dayanıklı Oğlak burçları ...",
+    "genel": "Toprak grubunun üyelerinden olan Oğlak burcu...",
+    "is_hayati": "Aslında iş hayatının burçlardaki karşılığı Oğlak burcudur...",
+    "saglik": "Dayanıklı Oğlak burçları...",
     "unluler": [
-      "Muhammad Ali",
-      "Barış Manço",
       "Burak Özçivit",
+      "Barış Manço",
+      "Diğer Ünlüler...",
     ],
-    "iliskiler": "Duygularını göstermekte zorlanan ...",
-    "kadin": "Hayatının her alanında olduğu gibi ...",
-    "erkek": "Sevgisini belli edemeyen Oğlak erkeği ...",
-    "resim_url": "https://toktasoft.com/..."
+    "iliskiler": "Duygularını göstermekte zorlanan...",
+    "kadin": "Hayatının her alanında olduğu gibi...",
+    "erkek": "Sevgisini belli edemeyen Oğlak erkeği...",
+    "resim_url": "https://toktasoft.com/api/api-resources/burclar/oglak.png"
   },
-  "monthly_request_count": 81
+  "error": null
 }
 ```
 
@@ -140,14 +145,15 @@ curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=genel&api_key=
 `burc` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar.php?burc=zurafa&tip=aylik&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?burc=zurafa&tip=aylik&api_key=myapikey"
 ```
 
 ```json
 {
-  "success": false,
-  "error": "Geçersiz burç parametresi.",
-  "monthly_request_count": 105
+  "status": 400,
+  "monthly_request_count": 105,
+  "result": null,
+  "error": "Geçersiz burç parametresi"
 }
 ```
 
@@ -156,31 +162,38 @@ curl -X GET "https://toktasoft.com/api/burclar.php?burc=zurafa&tip=aylik&api_key
 `tip` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar.php?burc=oglak&tip=omurluk&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=omurluk&api_key=myapikey"
 ```
 
 ```json
 {
-  "success": false,
-  "error": "Geçersiz tip parametresi.",
-  "monthly_request_count": 204
+  "status": 400,
+  "monthly_request_count": 204,
+  "result": null,
+  "error": "Geçersiz tip parametresi"
 }
 ```
 
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+![-----------------------------------------------------](./Readme%20Resources/Line.png)
 
-<a href="https://github.com/mustafatoktas/W.BE_RepoVisitorCounterAPI" target="_blank"> <img src="https://toktasoft.com/api/github2/repo-visitor-counter.php?repo=ghb8jc6vnp4tmx7&show_repo_name=1&show_date=1&show_brand=0" alt="Repo Visitor Counter"/> </a>
+<div align="center">
+  <a href="https://github.com/mustafatoktas/W.BE_RepoVisitorCounterAPI"><img src="https://toktasoft.com/api/repo-visitor-counter?repo=ghb8jc6vnp4tmx7&show_repo_name=1&show_date=1&show_brand=0&txt_color=209,215,224&bg_color=45,52,58" alt="Repo Visitor Counter"/></a>
+</div>
 
-<a href="https://buymeacoffee.com/mustafatoktas" target="_blank"> <img src="./Readme Resources/İletişim/Buy Me a Coffee.png" alt="Buy Me a Coffee" height="64"/> </a>
+<br>
+  
+<div align="center">
+  <a href="https://buymeacoffee.com/mustafatoktas"><img src="./Readme Resources/Communication/Buy Me a Coffee.png" alt="Buy Me a Coffee" height="64"/></a>
+</div>
 
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+![-----------------------------------------------------](./Readme%20Resources/Line.png)
 
 ## Lisans
 
 ```
-Copyright 2024 Mustafa TOKTAŞ
+Copyright 2024-2025 Mustafa TOKTAŞ
 
 Licensed under the GNU General Public License v3.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -196,10 +209,14 @@ limitations under the License.
 ```
 
 
-![-----------------------------------------------------](./Readme%20Resources/Çizgi.png)
+![-----------------------------------------------------](./Readme%20Resources/Line.png)
 
 ## İletişim
 
-<a href="mailto:info@mustafatoktas.com"              target="_blank"> <img src="./Readme Resources/İletişim/Mail.png"     alt="Mail"     width="64"/> </a>
-<a href="https://t.me/mustafatoktas00"               target="_blank"> <img src="./Readme Resources/İletişim/Telegram.png" alt="Telegram" width="64"/> </a>
-<a href="https://www.linkedin.com/in/mustafatoktas/" target="_blank"> <img src="./Readme Resources/İletişim/LinkedIn.png" alt="LinkedIn" width="64"/> </a>
+<a href="mailto:info@mustafatoktas.com"             ><img src="./Readme Resources/Communication/Mail.png"     alt="Mail"     width="64"/></a>
+<a href="https://t.me/mustafatoktas00"              ><img src="./Readme Resources/Communication/Telegram.png" alt="Telegram" width="64"/></a>
+<a href="https://www.linkedin.com/in/mustafatoktas/"><img src="./Readme Resources/Communication/LinkedIn.png" alt="LinkedIn" width="64"/></a>
+
+<p align="center">
+  <a href="#readme-top"><img src="./Readme Resources/Back to Top.png" alt="Back to Top" height="64"/></a>
+</p>
