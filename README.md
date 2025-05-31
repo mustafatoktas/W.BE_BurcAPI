@@ -38,11 +38,12 @@ Base URL: `https://toktasoft.com/api/burclar`
 
 API 3 farklı parametre almaktadır.
 
-| Parametre                       | Zorunlu Mu?                 | Değerler                                                                                                                       | Varsayılan Değer             | Açıklama                         |
-| ------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------- | -------------------------------- |
-| <p align="center">`burc`</p>    | <p align="center">evet</p>  | `oglak`<br>`boga`<br>`ikizler`<br>`yengec`<br>`aslan`<br>`basak`<br>`terazi`<br>`akrep`<br>`yay`<br>`koc`<br>`kova`<br>`balik` |                              | Bilgileri istenen burcun değeri. |   
-| <p align="center">`tip`</p>     | <p align="center">hayır</p> | `gunluk`<br>`haftalik`<br>`aylik`<br>`yillik`<br>`genel`                                                                       | <p align="center">gunluk</p> | Yorumu istenilen burcun tip değeri. Burcun genel özellikleri için genel değeri yazılmalıdır.                                                                                                                    |
-| <p align="center">`api_key`</p> | <p align="center">evet</p>  | API anahtarı                                                                                                                   |                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
+| Parametre                       | Değerler                                                                                                                       | Zorunlu Mu?                 | Varsayılan Değer             | Açıklama                                                                                     |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------- |
+| <p align="center">`api_key`</p> | API anahtarı                                                                                                                   | <p align="center">evet</p>  |                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
+| <p align="center">`burc`</p>    | `oglak`<br>`boga`<br>`ikizler`<br>`yengec`<br>`aslan`<br>`basak`<br>`terazi`<br>`akrep`<br>`yay`<br>`koc`<br>`kova`<br>`balik` | <p align="center">evet</p>  |                              | Bilgileri istenen burcun değeri.                                                             |
+| <p align="center">`tip`</p>     | `gunluk`<br>`haftalik`<br>`aylik`<br>`yillik`<br>`genel`                                                                       | <p align="center">hayır</p> | <p align="center">gunluk</p> | Yorumu istenilen burcun tip değeri. Burcun genel özellikleri için genel değeri yazılmalıdır. |
+
 
 
 ![-----------------------------------------------------](./Readme%20Resources/Line.png)
@@ -54,7 +55,7 @@ API 3 farklı parametre almaktadır.
 ✅**Oğlak burcunun günlük yorumu**
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak"
 ```
 
 ```json
@@ -78,7 +79,7 @@ curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&api_key=myapikey"
 ✅**Oğlak burcunun haftalık yorumu**
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=haftalik&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=haftalik"
 ```
 
 ```json
@@ -102,7 +103,7 @@ curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=haftalik&api_key=m
 ✅**Oğlak burcunun genel özellikleri**
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=genel&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=genel"
 ```
 
 ```json
@@ -145,7 +146,7 @@ curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=genel&api_key=myap
 `burc` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar?burc=zurafa&tip=aylik&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=zurafa&tip=aylik"
 ```
 
 ```json
@@ -162,7 +163,7 @@ curl -X GET "https://toktasoft.com/api/burclar?burc=zurafa&tip=aylik&api_key=mya
 `tip` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar?burc=oglak&tip=omurluk&api_key=myapikey"
+curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=omurluk"
 ```
 
 ```json
