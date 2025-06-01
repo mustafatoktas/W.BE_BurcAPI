@@ -19,8 +19,7 @@ Burç API<a name="readme-top"></a>
 
 ## API Hakkında
 
-Bu repo, PHP diliyle geliştirilmiş olan burç yorumlarını ve bilgilerini sunan
-API'nin dokümantasyonunu içerir.
+Bu repo, burç yorumlarını ve bilgilerini sunan API'nin dokümantasyonunu içerir.
 
 HTTP GET istekleriyle `burc`, `tip` ve `api_key` parametrelerini alır ve bütün burçların
 günlük, haftalık, aylık, yıllık yorumlarını JSON formatında sağlar.
@@ -145,7 +144,7 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=g
 `burc` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
 ```sh
-curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=zurafa&tip=aylik"
+curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=zurafa"
 ```
 
 ```json
