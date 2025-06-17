@@ -6,7 +6,7 @@ Burç API<a name="readme-top"></a>
   <img src="./Readme Resources/Burç API Logo.png" alt="Logo" width="120"/>
 </div>
 
-## **İçindekiler**
+## İçindekiler
 
 - [API Hakkında](#api-hakkında)
 - [Dokümantasyon](#dokümantasyon)
@@ -15,7 +15,7 @@ Burç API<a name="readme-top"></a>
 - [İletişim](#i̇letişim)
 
 
-![-----------------------------------------------------](./Readme%20Resources/Line.png)
+![—————————————————————————————————————————————————](./Readme%20Resources/Line.png)
 
 ## API Hakkında
 
@@ -29,7 +29,7 @@ JSON dosyasında her burç için burcu temsil eden 256 x 256 çözünürlüğün
 Ayrıca tip parametresine "genel" değeri yazılarak burçların detaylı karakter özellikleri öğrenilebilir.
 
 
-![-----------------------------------------------------](./Readme%20Resources/Line.png)
+![—————————————————————————————————————————————————](./Readme%20Resources/Line.png)
 
 ## Dokümantasyon
 
@@ -37,20 +37,20 @@ Base URL: `https://toktasoft.com/api/burclar`
 
 API 3 farklı parametre almaktadır.
 
-| Parametre                     | Zorunlu Mu?                 | Değerler                                                                                               | Varsayılan Değer             | Açıklama                         |
-| ----------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------ | ---------------------------- | -------------------------------- |
-| <p align="center">api_key</p> | <p align="center">evet</p>  | API anahtarı                                                                                           |                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
-| <p align="center">burc</p>    | <p align="center">evet</p>  | oglak<br>boga<br>ikizler<br>yengec<br>aslan<br>basak<br>terazi<br>akrep<br>yay<br>koc<br>kova<br>balik |                              | Bilgileri istenen burcun değeri. |   
-| <p align="center">tip</p>     | <p align="center">hayır</p> | gunluk<br>haftalik<br>aylik<br>yillik<br>genel                                                         | <p align="center">gunluk</p> | Yorumu istenilen burcun tip değeri. Burcun genel özellikleri için genel değeri yazılmalıdır.                                                                                                                    |
+| Parametre                       | Zorunlu Mu?                 | Değerler                                                                                                                     | Varsayılan Değer             | Açıklama                         |
+| ------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | -------------------------------- |
+| <p align="center">`api_key`</p> | <p align="center">evet</p>  | API anahtarı                                                                                                                 |                              | Api key'ler aylık maksimum 100 istek ile sınırlandırılmıştır. Api key sahibi olabilmek veya ayrıcalıklı kullanıcı statüsüne geçip sınırsız istek hakkına sahip olabilmek için iletişime geçmeniz gerekmektedir. |
+| <p align="center">`burc`</p>    | <p align="center">evet</p>  | oglak <br> boga <br> ikizler <br> yengec <br> aslan <br> basak <br> terazi <br> akrep <br> yay <br> koc <br> kova <br> balik |                              | Bilgileri istenen burcun değeri. |   
+| <p align="center">`tip`</p>     | <p align="center">hayır</p> | gunluk <br> haftalik <br> aylik <br> yillik <br> genel                                                                       | <p align="center">gunluk</p> | Yorumu istenilen burcun tip değeri. Burcun genel özellikleri için genel değeri yazılmalıdır.                                                                                                                    |
 
 
-![-----------------------------------------------------](./Readme%20Resources/Line.png)
+![—————————————————————————————————————————————————](./Readme%20Resources/Line.png)
 
 ## İstek Örnekleri
 
 İstek örnekleri `curl` komut satırı aracı kullanılarak gösterilmiştir.
 
-✅**Oğlak burcunun günlük yorumu**
+✅ **Oğlak burcunun günlük yorumu**
 
 ```sh
 curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak"
@@ -74,7 +74,7 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak"
 }
 ```
 
-✅**Oğlak burcunun haftalık yorumu**
+✅ **Oğlak burcunun haftalık yorumu**
 
 ```sh
 curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=haftalik"
@@ -98,7 +98,7 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=h
 }
 ```
 
-✅**Oğlak burcunun genel özellikleri**
+✅ **Oğlak burcunun genel özellikleri**
 
 ```sh
 curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=genel"
@@ -139,7 +139,7 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=g
 }
 ```
 
-❌**Yanlış istek**
+❌ **Yanlış istek**
 
 `burc` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
@@ -156,7 +156,7 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=zurafa"
 }
 ```
 
-❌**Yanlış istek**
+❌ **Yanlış istek**
 
 `tip` parametresine tablodaki değerler dışında bir değer girilirse hata döndürülür.
 
@@ -174,7 +174,7 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=o
 ```
 
 
-![-----------------------------------------------------](./Readme%20Resources/Line.png)
+![—————————————————————————————————————————————————](./Readme%20Resources/Line.png)
 
 <div align="center">
   <a href="https://github.com/mustafatoktas/W.BE_RepoVisitorCounterAPI"><img src="https://toktasoft.com/api/repo-visitor-counter?repo=ghb8jc6vnp4tmx7&show_repo_name=1&show_date=1&show_brand=0&txt_color=209,215,224&bg_color=45,52,58" alt="Repo Visitor Counter"/></a>
@@ -183,11 +183,11 @@ curl -X GET "https://toktasoft.com/api/burclar?api_key=myapikey&burc=oglak&tip=o
 <br>
   
 <div align="center">
-  <a href="https://buymeacoffee.com/mustafatoktas"><img src="./Readme Resources/Communication/Buy Me a Coffee.png" alt="Buy Me a Coffee" height="64"/></a>
+  <a href="https://buymeacoffee.com/mustafatoktas"><img src="./Readme Resources/Contact/Buy Me a Coffee.png" alt="Buy Me a Coffee" height="64"/></a>
 </div>
 
 
-![-----------------------------------------------------](./Readme%20Resources/Line.png)
+![—————————————————————————————————————————————————](./Readme%20Resources/Line.png)
 
 ## Lisans
 
@@ -208,14 +208,14 @@ limitations under the License.
 ```
 
 
-![-----------------------------------------------------](./Readme%20Resources/Line.png)
+![—————————————————————————————————————————————————](./Readme%20Resources/Line.png)
 
 ## İletişim
 
-<a href="mailto:info@mustafatoktas.com"             ><img src="./Readme Resources/Communication/Mail.png"     alt="Mail"     width="64"/></a>
-<a href="https://t.me/mustafatoktas00"              ><img src="./Readme Resources/Communication/Telegram.png" alt="Telegram" width="64"/></a>
-<a href="https://www.linkedin.com/in/mustafatoktas/"><img src="./Readme Resources/Communication/LinkedIn.png" alt="LinkedIn" width="64"/></a>
+<a href="mailto:info@mustafatoktas.com"             ><img src="./Readme Resources/Contact/Mail.png"     alt="Mail"     width="64"/></a>
+<a href="https://t.me/mustafatoktas00"              ><img src="./Readme Resources/Contact/Telegram.png" alt="Telegram" width="64"/></a>
+<a href="https://www.linkedin.com/in/mustafatoktas/"><img src="./Readme Resources/Contact/LinkedIn.png" alt="LinkedIn" width="64"/></a>
 
-<p align="center">
+<div align="center">
   <a href="#readme-top"><img src="./Readme Resources/Back to Top.png" alt="Back to Top" height="64"/></a>
-</p>
+</div>
